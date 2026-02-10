@@ -1,0 +1,127 @@
+:root {
+    --bg-dark: #0a0b1e;
+    --purple-main: #3b3a8a;
+    --purple-light: #5239cc;
+    --text-white: #f5f5f5;
+    --gray-text: #b0b0b0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-dark);
+    scroll-margin-left: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;;
+}
+
+nav {
+    background-color: var(--purple-main);
+    padding: 10px 50px;;
+    display: flex;
+    align-items: center;
+    gap: 30px;;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 20px;
+    color: var(--text-white);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.nav-links a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.nav-links .active {
+    background-color: #3C096C;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+ /* STORE LAYOUT */
+.store-layout{
+    display:flex;
+    min-height:600px;
+}
+
+/* LEFT SIDEBAR */
+.store-sidebar{
+    width:120px;
+    background:#3C096C;
+    padding-top:40px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    align-items:center;
+}
+
+.side-btn {
+    background: linear-gradient(180deg, #8A2BE2, #6A00FF);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store-panel{
+    flex:1;
+    margin:40px;
+    background:#2b0050;
+    border-radius:30px;
+    border:2px solid #00bfff;
+    padding:40px;
+    display:flex;
+    gap:40px;
+}
+
+/* CARDS */
+.store-card{
+    text-align:center;
+    color:white;
+}
+
+.card-img{
+    width:120px;
+    height:120px;
+    border-radius:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(180deg,#9d4dff,#6a00ff);
+    margin-bottom:10px;
+}
+
+footer {
+    background-color: var(--purple-main);
+    color: var(--text-white);
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: var(--gray-text);
+    margin-bottom: 3px;
+}
